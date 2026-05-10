@@ -29,20 +29,6 @@ imu_project/
 └── README.md
 ```
 
-## Status
-
-| Component | File | Status | Board Needed? |
-|-----------|------|--------|---------------|
-| Data structures | `imu_common.h` | ✅ Complete | No |
-| Complementary filter | `fusion.h` | ✅ Complete | No |
-| UART protocol | `protocol.h` | ✅ Complete | No |
-| Sensor driver | `mpu6050.h` | ✅ Complete | No (uses i2c_driver) |
-| I2C driver | `i2c_driver.h` | ⬜ Interface only | **Yes** |
-| FreeRTOS app | `main.c` | ✅ Complete | Yes (to run) |
-| Python host | `imu_host.py` | ✅ Complete | No (test with fake_imu) |
-| Offline tests | `test_fusion_protocol.py` | ✅ Complete | No |
-| Fake MCU simulator | `fake_imu_serial.py` | ✅ Complete | No |
-
 ## Quick Start (No Board)
 
 ### 1. Run offline tests
