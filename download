@@ -1,0 +1,37 @@
+# Build artifacts
+*.o
+*.obj
+*.d
+*.out
+*.elf
+*.map
+*.hex
+*.bin
+
+# CCS project files
+Debug/
+Release/
+.settings/
+.cproject
+.project
+*.launch
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Logs
+*.csv
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
