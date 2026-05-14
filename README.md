@@ -15,16 +15,12 @@ main.c             FreeRTOS application (3 tasks)
 imu_host.py        Python host (live plotting)
 ```
 
-## Status
-
-| File | Status |
-|------|--------|
-| imu_common.h | Done |
-| fusion.h | Done |
-| mpu6050.h | Done |
-| i2c_driver.h | Interface only — needs i2c_driver.c |
-| main.c | Done |
-| imu_host.py | Done |
+### Remaining Work
+1. Create `i2c_driver.c` implementing the 5 functions in `i2c_driver.h`
+2. In `mpu6050.h`, uncomment the lines marked `BOARD TODO`
+3. Import the FreeRTOS skeleton project from the SDK
+4. Replace `main.c`, add headers to include path, add `i2c_driver.c`
+5. Build and flash
 
 ## Board Setup
 
@@ -35,13 +31,6 @@ imu_host.py        Python host (live plotting)
 | GND | GND |
 | SDA | I2C1 SDA (configure via SysConfig) |
 | SCL | I2C1 SCL (configure via SysConfig) |
-
-### Remaining Work
-1. Create `i2c_driver.c` implementing the 5 functions in `i2c_driver.h`
-2. In `mpu6050.h`, uncomment the lines marked `BOARD TODO`
-3. Import the FreeRTOS skeleton project from the SDK
-4. Replace `main.c`, add headers to include path, add `i2c_driver.c`
-5. Build and flash
 
 ## Running
 
@@ -65,9 +54,6 @@ pip install pyserial matplotlib
 ```
 
 ## Lab Code Reference
-
-This section documents which lab exercises the project code is based on.
-Useful for the presentation and report.
 
 | Component | Lab Source | What We Reused |
 |-----------|-----------|----------------|
